@@ -1,0 +1,161 @@
+$s-green: #298210;
+$c-blue: #2a93d5;
+$c-blue-light: #00b1df;
+$c-blue-dark: #135589;
+$c-blue-lighter: rgba($c-blue, 0.85);
+$c-blue-darker: rgba($c-blue-dark, 0.65);
+$c-cyan: #00cbd0;
+$c-gray: #3b4856;
+$c-light-gray: #9fadbd;
+$c-red: #f14584;
+$c-orange: #ff7c63;
+//
+$c-title: rgba(0, 0, 0, 0.85);
+$c-primary-text: rgba(0, 0, 0, 0.65);
+$c-content: rgba(0, 0, 0, 0.45);
+$c-border: rgba(0, 0, 0, 0.15);
+$c-divider: rgba(0, 0, 0, 0.09);
+$c-background: rgba(0, 0, 0, 0.04);
+// DARK THEME
+$d-white: #fff;
+$d-title: rgba($d-white, 1);
+$d-primary: rgba($d-white, 0.85);
+$d-secondary: rgba($d-white, 0.65);
+$d-disable: rgba($d-white, 0.45);
+$d-border: rgba($d-white, 0.25);
+$d-divider: rgba($d-white, 0.15);
+$d-bg: rgba($d-white, 0.09);
+//LIGHT THEME
+$l-black: #000;
+$l-title: rgba($l-black, 0.85);
+$l-primary: rgba($l-black, 0.65);
+$l-secondary: rgba($l-black, 0.45);
+$l-disable: rgba($l-black, 0.25);
+$l-border: rgba($l-black, 0.15);
+$l-divider: rgba($l-black, 0.09);
+$l-bg: rgba($l-black, 0.04);
+//
+$facebook: rgb(59, 89, 182);
+$facebook-chatbot: #0084ff;
+$instagram: #4e433c;
+$youtube: #ff3333;
+$whatsapp: #25d366;
+//
+$gp-green: #66cc00;
+$gp-bg-green: #80c342;
+$black: #231f20;
+$light-black: #3a3a3a;
+$white: #fff;
+$red: #ff3100;
+$yellow: #f2b305;
+$dark-yellow: rgba(242, 179, 5, 0.8);
+$dark-blue: #044866;
+$sky-blue: #0bb5ff;
+$dark-gray: #6d6d6d;
+$light-gray: #dddddd;
+//
+// Mobile First
+//
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+//
+// Desktop First
+//
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+.z-depth-1,
+.card,
+.btn {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-4 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-5,
+.modal {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+//
+// Breakpoints mixins
+//
+@mixin for-mobile-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}

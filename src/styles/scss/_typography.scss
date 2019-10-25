@@ -1,0 +1,180 @@
+// win
+$win: Microsoft YaHei, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+// mac
+$mac: PingFang TC, Heiti TC, LiHei Pro, Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+//
+$font-noto_sans: 'Noto Sans TC', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+//
+$font-montserrat: 'Montserrat', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+// git recommended
+$font-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+  'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+:root {
+  font-size: 16px;
+}
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (-webkit-max-device-pixel-ratio: 1.5625),
+  screen and (max-resolution: 150dpi) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-family: $font-noto_sans;
+  font-size: 16px;
+  line-height: 1.42857;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+small,
+.text_small {
+  font-size: 1rem;
+}
+
+//
+button {
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+:focus:not(.focus-ring),
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+select:focus {
+  outline: none;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='search'],
+input[type='reset'] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+/* letter spacing */
+
+.no-letter-spacing {
+  letter-spacing: 0px !important;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px !important;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px !important;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px !important;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px !important;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 5px !important;
+}
+
+.letter-spacing-6 {
+  letter-spacing: 6px !important;
+}
+
+.letter-spacing-7 {
+  letter-spacing: 7px !important;
+}
+
+.letter-spacing-8 {
+  letter-spacing: 8px !important;
+}
+
+.letter-spacing-9 {
+  letter-spacing: 9px !important;
+}
+
+.letter-spacing-10 {
+  letter-spacing: 10px !important;
+}
+
+/* font weight */
+
+.font-weight--light {
+  font-weight: 300 !important;
+}
+
+.font-weight--regular {
+  font-weight: 400 !important;
+}
+
+.font-weight--medium {
+  font-weight: 500 !important;
+}
+
+.font-weight--semibold {
+  font-weight: 600 !important;
+}
+
+.font-weight--bold {
+  font-weight: 700 !important;
+}
+
+.font-weight--black {
+  font-weight: 900 !important;
+}
