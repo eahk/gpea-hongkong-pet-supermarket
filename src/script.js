@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import * as helpers from '@/helpers.js'
 import { mainShare, whatsAppShare } from '@/share.js'
 import NProgress from 'nprogress'
@@ -13,6 +14,7 @@ const appendForm = function() {
     enFormWrapper.appendChild(nativeForm)
   }
 }
+//
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 export default {
@@ -169,6 +171,20 @@ export default {
       helpers.enFormFieldInit()
       helpers.enFormType()
       helpers.createBirthYearList()
+      helpers.enFormEmailCheck()
+      let setEmailConsent = function() {
+        let pageEmailConsent = document.querySelector(
+          '#en__field_supporter_questions_7275'
+        ).checked
+          ? 'Y'
+          : 'N'
+        sessionStorage.setItem('pageEmailConsent', pageEmailConsent)
+      }
+      setEmailConsent()
+      $('.en__field--email-ok-hongkong input').change(function() {
+        setEmailConsent()
+        // console.log(sessionStorage.getItem('pageEmailConsent'))
+      })
     }
     fetch(
       'https://act.greenpeace.org/ea-dataservice/data.service?contentType=json&service=EaDataCapture&token=7a06c0fc-32fe-43f1-8a1b-713b3ea496e1&campaignId=149502&resultType=summary'

@@ -6,8 +6,9 @@ import store from './store'
 import Transitions from 'vue2-transitions'
 Vue.use(Transitions)
 //
-import { PopoverPlugin } from 'bootstrap-vue'
+import { ProgressPlugin, PopoverPlugin } from 'bootstrap-vue'
 Vue.use(PopoverPlugin)
+Vue.use(ProgressPlugin)
 //
 import 'normalize.css/normalize.css'
 import 'nprogress/nprogress.css'
