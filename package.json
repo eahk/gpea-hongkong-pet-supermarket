@@ -11,7 +11,7 @@
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
-    "core-js": "^3.3.2",
+    "core-js": "^3.3.4",
     "jquery": "^3.4.1",
     "lodash.debounce": "^4.0.8",
     "mailcheck": "^1.1.1",

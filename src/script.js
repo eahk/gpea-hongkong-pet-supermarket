@@ -181,10 +181,12 @@ export default {
         sessionStorage.setItem('pageEmailConsent', pageEmailConsent)
       }
       setEmailConsent()
-      $('.en__field--email-ok-hongkong input').change(function() {
-        setEmailConsent()
-        // console.log(sessionStorage.getItem('pageEmailConsent'))
-      })
+      document
+        .querySelector('#en__field_supporter_questions_7275')
+        .addEventListener('change', function() {
+          setEmailConsent()
+          // console.log(sessionStorage.getItem('pageEmailConsent'))
+        })
     }
     fetch(
       'https://act.greenpeace.org/ea-dataservice/data.service?contentType=json&service=EaDataCapture&token=7a06c0fc-32fe-43f1-8a1b-713b3ea496e1&campaignId=149502&resultType=summary'

@@ -324,7 +324,9 @@ export const enFormEmailCheck = function() {
     // a string distance algorithm of your choosing
   }
   //
-  $('.mailcheck-message').appendTo('.en__field--emailAddress')
+  const mailCheckMessage = document.createElement('span')
+  mailCheckMessage.classList.add('mailcheck-message')
+  $('.en__field--emailAddress').append(mailCheckMessage)
   $('.mailcheck-message').hide()
   //
   email.addEventListener('blur', function() {

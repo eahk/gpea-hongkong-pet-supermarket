@@ -1,4 +1,24 @@
 /* form base */
+.enform {
+  .mailcheck-message {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 3px;
+    color: #f66;
+    .suggestion {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .reminderMessage {
+    margin-top: 3px;
+    color: #f66;
+    padding-left: 18px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
 
 /* form status */
 
