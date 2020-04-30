@@ -12,7 +12,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
     "core-js": "^3.3.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash.debounce": "^4.0.8",
     "mailcheck": "^1.1.1",
     "normalize.css": "^8.0.1",
